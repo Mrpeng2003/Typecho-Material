@@ -1,3 +1,10 @@
+<!--新版维护由Mr.peng维护 <mrpeng@crazypeng.xyz>
+维护-20220407
+加入浏览次数统计
+增加了隐藏文字
+加入灯箱
+加入Aplayer
+-->
 <?php $this->need('header.php'); ?>
 
 <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
@@ -79,14 +86,14 @@
                                     <li class="mdl-menu__item">编辑</li>
                                 </a>
                             <?php endif;?>
+                            <a class="md-menu-list-a" href="https://connect.qq.com/widget/shareqq/index.html?url=<?php $this->permalink(); ?>&title=<?php $this->title(); ?>&desc=一个普通的Galgame资源站&piQQc=&site=茶番屋">
+                                <li class="mdl-menu__item">
+                                <?php lang("share.toQQ") ?>
+                                </li>
+                            </a>
                             <a class="md-menu-list-a" href="https://telegram.me/share/url?url=<?php $this->permalink() ?>&text=<?php $this->title(); ?>" >
                                 <li class="mdl-menu__item">
                                 <?php lang("share.toTelegram") ?>
-                                </li>
-                            </a>
-                            <a class="md-menu-list-a" href="https://twitter.com/intent/tweet?text=<?php $this->title() ?>&url=<?php $this->permalink() ?>&via=<?php $this->user->screenName(); ?>">
-                                <li class="mdl-menu__item">
-                                <?php lang("share.toTwitter") ?>
                                 </li>
                             </a>
                             <a class="md-menu-list-a" href="http://service.weibo.com/share/share.php?appkey=&title=<?php $this->title(); ?>&url=<?php $this->permalink(); ?>&pic=&searchPic=false&style=simple ">
@@ -114,7 +121,7 @@
                         $content = preg_replace("/\[hide\](.*?)\[\/hide\]/sm",'<div style="text-align:center;border:1px dashed #FF9A9A;padding:8px;margin:10px auto;color:#FF6666;">$1</div>',$this->content);
                     }
                     else{
-                        $content = preg_replace("/\[hide\](.*?)\[\/hide\]/sm",'<div style="text-align:center;border:1px dashed #FF9A9A;padding:8px;margin:10px auto;color:#FF6666;">特殊时期，此处内容需要评论后才能浏览</div>',$this->content);
+                        $content = preg_replace("/\[hide\](.*?)\[\/hide\]/sm",'<div style="text-align:center;border:1px dashed #FF9A9A;padding:8px;margin:10px auto;color:#FF6666;">此处内容需要评论后才能浏览哦</div>',$this->content);
                     }
                     echo $content 
                     ?>
