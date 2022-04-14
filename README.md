@@ -1,2 +1,2 @@
 # Typecho-Material
-自己个人维护的Typecho主题
+简单修改的Typecho主题
