@@ -1,3 +1,10 @@
+<!--
+维护由Mr.Peng进行 <mrpeng@crazypeng.xyz>
+*增加了小选项-20220307
+*屏蔽入口防止Bot疯狂访问login页-20220405
+*将Pixiv挂件的API改为自搭建API-20220407
+*添加访问排行榜输出-20220407
+-->
 <!-- Overlay for fixed sidebar -->
 <div class="sidebar-overlay "></div>
 
@@ -66,8 +73,8 @@
                         <?php else: ?>
                             <li>
                                 <a href="#" class="md-menu-list-a" tabindex="-1">
-                                    <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">fingerprint</i>
-                                    You don't login
+                                    <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">close</i>
+                                    You can't login
                                 </a>
                             </li>
                         <?php endif; ?>
@@ -152,34 +159,22 @@
             <div class="sidebar-divider"></div>
 
             <!-- Sidebar bottom text -->
-            <a href="https://tool.crazypeng.xyz/unlock" target="_blank" class="sidebar-footer-text-a">
+            <a href="#" target="_blank" class="sidebar-footer-text-a">
                 <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-				音乐解锁
+				Text
                     <span class="sidebar-badge badge-circle">➔</span>
                 </div>
             </a>
-            <a href="https://acg23.xyz" target="_blank" class="sidebar-footer-text-a">
-                <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-				前往茶番屋主页
-                    <span class="sidebar-badge badge-circle">➔</span>
-                </div>
-            </a>
-            <a href="https://crazypeng.xyz" target="_blank" class="sidebar-footer-text-a">
-                <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-				前往Mr.Peng的小站
-                    <span class="sidebar-badge badge-circle">➔</span>
-                </div>
-            </a>
-            <a href="https://blog.crazypeng.xyz/suprise.mp4" target="_blank" class="sidebar-footer-text-a">
-                <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-				Suprise Video
+            <a href="https://blog.crazypeng.xyz/surprise.mp4" target="_blank" class="sidebar-footer-text-a">
+                <div class="sidebar-text mdl-button mdl-js-buimg.crazypeng.xyztton mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+				Surprise⚠
                     <span class="sidebar-badge badge-circle">i</span>
                 </div>
             </a>
 
             <?php if (!empty($this->options->switch) && in_array('ShowPixiv', $this->options->switch)) : ?>
             <div>
-                <iframe src="https://cloud.mokeyjay.com/pixiv/" frameborder="0"  style="width: 240px; height: 380px; margin: 0 auto; text-align: center"></iframe>
+                <iframe src="https://img.crazypeng.xyz/pixiv/" frameborder="0"  style="width: 240px; height: 380px; margin: 0 auto; text-align: center"></iframe>
             </div>
             <?php endif; ?>
 
