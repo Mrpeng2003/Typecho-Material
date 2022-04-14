@@ -52,8 +52,8 @@
                 <a class="md-menu-list-a" target="view_window" href="<?php $comments->permalink(); ?>">
                     <li class="mdl-menu__item">在新标签页中打开</li>
                 </a>
-                <a class="md-menu-list-a" href="https://twitter.com/intent/tweet?text=<?php echo htmlspecialchars($comments->content); ?>+from&url=<?php $comments->permalink(); ?>">
-                    <li class="mdl-menu__item">分享到 Twitter</li>
+                <a class="md-menu-list-a" href="https://connect.qq.com/widget/shareqq/index.html?url=<?php echo htmlspecialchars($comments->content); ?>&title=来自茶番屋的一条评论&desc=一个普通的Galgame资源站&pic=&site=茶番屋">
+                    <li class="mdl-menu__item">分享到 QQ</li>
                 </a>
             </ul>
         </nav>
@@ -107,38 +107,9 @@
                                 <input type="text" name="author" class="mdl-textfield__input login-input-info" value="<?php $this->remember('author'); ?>" />
                                 <label for="author" class="mdl-textfield__label">
                                     <?php if (getThemeOptions("language") === "zh-CN"): ?>
-                                    昵称*
+                                    名字
                                     <?php else: ?>
-                                    Name*
-                                    <?php endif; ?>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Input email -->
-                        <div class="login-form-group">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input type="email" name="mail" class="mdl-textfield__input login-input-info" value="<?php $this->remember('mail'); ?>" />
-                                <label for="mail" class="mdl-textfield__label">
-                                    <?php if (getThemeOptions("language") === "zh-CN"): ?>
-                                    邮箱*
-                                    <?php else: ?>
-                                    Email*
-                                    <?php endif; ?>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Input website -->
-                        <div class="login-form-group">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input type="url" name="url" id="visitor-url" class="mdl-textfield__input login-input-info" value="<?php $this->remember('url'); ?>" />
-                                <!--  placeholder="http://"-->
-                                <label for="url" class="mdl-textfield__label">
-                                    <?php if (getThemeOptions("language") === "zh-CN"): ?>
-                                    网站*
-                                    <?php else: ?>
-                                    Website*
+                                    Name
                                     <?php endif; ?>
                                 </label>
                             </div>
@@ -150,7 +121,7 @@
                         <textarea name="text" rows="<?php $this->options->CommentRows() ?>" id="comment" class="mdl-textfield__input"></textarea>
                         <label for="comment" class="mdl-textfield__label">
                             <?php if (getThemeOptions("language") === "zh-CN"): ?>
-                            加入讨论吧...
+                            讨论一下吧...
                             <?php else: ?>
                             Join the discussion
                             <?php endif; ?>
