@@ -1,3 +1,8 @@
+<!--更新记录
+增加Hide及增强Hide内容安全性-220321
+二维码api更换为自己的api-220407
+由Mr.Peng维护 <mrpeng@crazypeng.xyz>
+-->
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
@@ -176,6 +181,7 @@ function themeInit($archive)
  * 获取二维码
  * @param string permalink
  * @return string url
+ * img.crazypeng.xyz是Mr.peng的api站点
  */
 function getQRCode($permalink) {
     $qrcode = getThemeOptions("qrcode");
