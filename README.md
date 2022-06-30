@@ -1,7 +1,7 @@
 # Typecho-Material
-简单修改的Typecho主题
+一个简单的Typecho主题
 
-# 修改内容
+# 更新内容
  - 修改了部分源码以兼容新版Typecho
  - 添加了一些实用功能
  - 修改了部分布局
