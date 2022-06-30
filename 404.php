@@ -6,7 +6,7 @@
 	<meta http-equiv="Cache-Control" content="no-transform" />
 	<meta http-equiv="Cache-Control" content="no-siteapp" />
 	<meta name="viewport" width="device-width", initial-scale="1.0" />
-	<title>错误 - 茶番屋</title>
+	<title>错误</title>
 	<link href="https://cdn.jsdelivr.net/gh/Mrpeng2003/Nistudio/crazyp/img/pugin/404.css" type="text/css" rel="stylesheet">
 	<style>
         .container {
@@ -21,11 +21,11 @@
     </style>
 </head>
 <!--/************************************************************
- *																*
- * 						     Mr.Peng							*
- *                    acg23.xyz crazypeng.xyz					*
- *       		        一位爱分享的OTAKU		            	*
- * 																*
+ *								*
+ * 		              Mr.Peng				*
+ *                    acg23.xyz crazypeng.xyz	         	*
+ *       		 一位爱分享的OTAKU		  	   *
+ * 								*
 **************************************************************-->
 <body>
 <div class="not-found-page">
