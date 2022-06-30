@@ -1,8 +1,6 @@
 <?php
 /**
- * 时间轴归档 VOEZ
- *
- * @package custom
+ * 时间轴归档 格式
  */
 $this->need('header.php'); ?>
 
